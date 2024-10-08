@@ -67,12 +67,14 @@ const App = () => {
   <Container>
     <TopContainer>
       <div className="logo">
-        <img src="/images/Foody Zone.svg" alt="logo" />
+        <img src="/images/logo (2).png" alt="logo" />
+        
       </div>
 
       <div className='search'>
         <input onChange={searchFood} placeholder='Search Food...' />
       </div>
+      
     </TopContainer>
 
     <FilterContainer>
@@ -97,11 +99,20 @@ margin: 0 auto;
 `;
 
 const TopContainer = styled.section`
-height: 140px;
+height: 90px;
 display: flex;
 justify-content: space-between;
 padding: 16px;
 align-items: center;
+
+
+.logo {
+  img {
+    width: 400px;  /* Set the desired width */
+    height: 150px;  /* Set the desired height */
+    object-fit: contain;  /* Ensures the image scales correctly */
+  }
+}
 
 .search {
   input{
@@ -143,5 +154,6 @@ const Button = styled.button`
     background-color: #7b1010;
   }
 `;
+
 
 
